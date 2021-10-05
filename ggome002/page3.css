@@ -1,0 +1,27 @@
+div {
+  height: 100px;
+  width: 100px;
+  background: purple;
+  position: absolute;
+}
+
+.b1 {
+  bottom: calc(100% - 100px);
+  right: calc(100% - 100px);
+}
+
+
+.b2 {
+  bottom: calc(100% - 100px);
+  right: 0%;
+}
+
+.b3 {
+  bottom: 0;
+  right: calc(100% - 100px);
+}
+
+.b4 {
+  bottom: 0%;
+  right: 0%;
+}
