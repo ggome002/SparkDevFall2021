@@ -1,0 +1,106 @@
+body{
+
+    background-color: grey;
+}
+.container{
+
+    position:relative;
+    height: 350px;
+    width: 350px;
+
+}
+/* 
+    This is the original cloud from the webpage in the discord.
+
+    .cloudy-old {
+	background: #FFFFFF;
+	height: 25px;
+	width: 25px; 
+	border-radius: 50%;
+
+	position: absolute;
+
+	box-shadow: 
+		red 65px -15px 0 -5px,
+		green 25px -25px, 
+		blue 30px 10px, 
+	    yellow 60px 15px 0 -10px,
+		purple 85px 5px 0 -5px;
+
+
+	margin-left: -60px;
+	left: 255px;
+	top: 30px; 
+} */
+
+.cloudy {
+
+	background: #FFFFFF;
+	height: 35px;
+	width: 35px; 
+	border-radius: 50%;
+
+	position: absolute;
+
+	box-shadow: 
+		white 45px -15px 0 -5px,
+		white 25px -15px, 
+		white 25px 10px, 
+	    white 48px 9px 0 -2px,
+		white 65px -5px 0 -3px;
+
+
+	margin-left: -50px;
+	left: 255px;
+	top: 30px; 
+}
+
+.cloudy-two, .cloudy-three{
+
+	background: white;
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+
+	position: absolute;
+
+	box-shadow: white 25px -15px 0 -5px,
+				white 30px 15px 0 -5px,
+				white 5px 20px 0 -10px,
+				white 55px -10px 0 -5px,
+				white 60px 15px 0 -10px;
+
+	margin-top: 10px;
+	margin-left: -60px;
+	left: 125px;
+	top: 30px;
+
+	transform: rotate(5deg);
+}
+.cloudy-three{
+
+	left: 400px;
+	transform: rotate(-5deg)
+
+}
+
+.horizon{
+
+	background-image: linear-gradient(to top left, #83a4d4, #b6fbff);
+	height: 50vh;
+	width: 75vh;
+
+	position: relative;
+
+}
+
+.ground{
+
+	background-image: linear-gradient(to top, rgb(99, 218, 99) ,green, rgba(4, 83, 4, 0.472));
+	height: 10vh;
+	width: 75vh;
+	position: absolute;
+
+	bottom: 0%;
+	
+}
