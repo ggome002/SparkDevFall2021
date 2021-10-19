@@ -1,13 +1,10 @@
 section {
-  background: linear-gradient(lightblue, white);
+  background-image: -webkit-linear-gradient(lightblue 10%, white 75%, green 95%);
+  background-image: -o-linear-gradient(lightblue 10%, white 75%, green 95%);
+  background-image: linear-gradient(lightblue 10%, white 75%, green 95%);
   height: 700px;
   width: 400px;
-  top: 50%;
-  left: 50%;
-  position: absolute;
-  transform: translate(-50%, -50%);
 }
-
 
 .sunny {
 	animation: sunny 15s linear infinite;
@@ -41,7 +38,3 @@ section {
 	left: -30px;
 	top: 30px;
 }
-/* @keyframes sunny {
-	0% { transform: rotate(0deg); }
-	100% { transform: rotate(360deg); }
-} */

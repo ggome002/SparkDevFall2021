@@ -1,0 +1,7 @@
+section {
+  background-image: -webkit-linear-gradient(lightgray 10%, white 75%, green 95%);
+  background-image: -o-linear-gradient(lightgray 10%, white 75%, green 95%);
+  background-image: linear-gradient(lightgray 10%, white 75%, green 95%);
+  height: 700px;
+  width: 400px;
+}
