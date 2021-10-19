@@ -1,0 +1,155 @@
+body{
+
+}
+div{
+
+}
+.everything{
+  height: 100%;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      background-image:-webkit-linear-gradient(darkblue 0%, black 80%, darkgreen 100%);
+
+
+
+}
+.cloud{
+position: absolute;
+top:calc(10% - 75px);
+left:calc(50% - 75px);
+animation-name: lefttoright;
+animation-duration: 21s;
+animation-iteration-count: infinite;
+height:300px;
+width:500px;
+animation-timing-function: linear;
+}
+@keyframes lefttoright {
+  0%   {left:-30%}
+  100% {left:100%}
+}
+span {
+  width: 150px;
+  height: 150px;
+  background:rgba(255,255,255);
+  border-radius: 50%;
+  position:absolute;
+}
+#left{
+left:calc(2% - 0px);
+top:calc(22% + 1px);
+}
+#middle{
+left:calc(13% - 0px);
+top: calc(0% - 0px);
+
+}
+#right{
+left:calc(31% - 0px);
+top: calc(22% + 1px);
+}
+command{
+  position: absolute;
+    top: 57%;
+    left: 31%;
+    transform: translate(-50%, -50%);
+    height: 91px;
+    width: 139px;
+    border-radius: 150px 150px 0 0;
+    background-color: rgba(255,255,255);
+  #  border: 1px solid black;
+}
+.cloud2{
+position: absolute;
+top:calc(25% - 75px);
+left:calc(50% - 75px);
+animation-name: lefttoright;
+animation-duration: 15s;
+animation-iteration-count: infinite;
+height:300px;
+width:500px;
+animation-timing-function: linear;
+}
+.cloud3{
+position: absolute;
+top:calc(18% - 75px);
+left:calc(50% - 75px);
+animation-name: lefttoright;
+animation-duration: 11s;
+animation-iteration-count: infinite;
+height:300px;
+width:500px;
+animation-timing-function: linear;
+}
+.moon{
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  top:calc(3% - 0px);
+  left:calc(3% - 0px);
+  background-image: -webkit-linear-gradient(0deg,rgba(173,216,230,0),   rgba(255,255,224,0.2) , rgba(173,216,230,0));
+  /*animation-name: spin;*/
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  z-index: -1;
+}
+@keyframes spin {
+  0%   {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+tt{
+  width: 150px;
+  height: 150px;
+  background-image: -webkit-radial-gradient(white 0%,yellow 200% );
+  border-radius: 50%;
+  position:absolute;
+  top:calc(50% - 75px);
+  left:calc(50% - 75px);
+}
+.starsky{
+  position: absolute;
+  width: 1700px;
+  height: 400px;
+  top:calc(0% - 0px);
+  left:calc(0% - 0px);
+  z-index: -1;
+}
+marquee{
+  width: 5px;
+  height: 5px;
+  background-image: -webkit-radial-gradient(lightyellow 0%, white 100% );
+  border-radius: 50%;
+  position:absolute;
+  top:calc(70% - 25px);
+  left:calc(70% - 25px);}
+.star{
+  top:calc(60% - 25px);
+  left:calc(60% - 25px);
+}
+.star1{
+  top:calc(50% - 25px);
+  left:calc(50% - 25px);
+}
+.star2{
+  top:calc(40% - 25px);
+  left:calc(40% - 25px);
+}
+.star3{
+  top:calc(50% - 25px);
+  left:calc(42% - 25px);
+}
+.star4{
+  top:calc(60% - 25px);
+  left:calc(44% - 25px);
+}
+.star5{
+  top:calc(70% - 25px);
+  left:calc(46% - 25px);
+}
+.star6{
+  top:calc(40% - 25px);
+  left:calc(48% - 25px);
+}
