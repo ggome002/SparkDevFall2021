@@ -9,6 +9,7 @@ div{
       width: 100%;
       position: fixed;
       top: 0;
+      left:0;
       background-image:-webkit-linear-gradient(lightblue 0%, white 80%, green 100%);
 
 
