@@ -68,16 +68,29 @@ section {
   body {
     background: red;
   }
+  .p3 {
+    left: 185px;
+    top: 130px;
+  }
 }
 
 @media screen and (min-width: 700px) {
   body {
     background: green;
   }
+
+  .p3 {
+    left: 185px;
+    top: 150px;
+  }
 }
 
 @media screen and (min-width: 800px) {
   body {
     background: blue;
+  }
+  .p3 {
+    left: 185px;
+    top: 110px;
   }
 }
