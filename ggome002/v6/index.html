@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="/ggome002/css/frame.css">
+    <link rel="stylesheet" href="scene.css">
+  </head>
+  <body>
+
+    <main>
+      <section>
+        <div class="cloudy"></div>
+        <div class="cloudy"></div>
+        <div class="cloudy"></div>
+      </section>
+    </main>
+  </body>
+  <script type="text/javascript">
+
+    left1 = Math.floor(Math.random() * 400);
+    left2 = Math.floor(Math.random() * 400);
+    left3 = Math.floor(Math.random() * 400);
+    top1 = Math.floor(Math.random() * 200);
+    top2 = Math.floor(Math.random() * 200);
+    top3 = Math.floor(Math.random() * 200);
+
+    document.getElementsByClassName("cloudy")[0].style.left = left1+'px'
+    document.getElementsByClassName("cloudy")[0].style.top = top1+'px'
+    document.getElementsByClassName("cloudy")[1].style.left = left2+'px'
+    document.getElementsByClassName("cloudy")[1].style.top = top2+'px'
+    document.getElementsByClassName("cloudy")[2].style.left = left3+'px'
+    document.getElementsByClassName("cloudy")[2].style.top = top3+'px'
+
+  </script>
+</html>
