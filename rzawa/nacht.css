@@ -10,7 +10,7 @@ div{
       position: fixed;
       top: 0;
       left:0;
-      background-image:-webkit-linear-gradient(darkblue 0%, black 80%, darkgreen 100%);
+      background-image:-webkit-linear-gradient(darkblue 0%,darkblue 30%, black 80%, darkgreen 100%);
 
 
 
@@ -90,7 +90,7 @@ animation-timing-function: linear;
   border-radius: 50%;
   top:calc(3% - 0px);
   left:calc(3% - 0px);
-  background-image: -webkit-linear-gradient(0deg,rgba(173,216,230,0),   rgba(255,255,224,0.2) , rgba(173,216,230,0));
+/* background-image: -webkit-linear-gradient(0deg,rgba(173,216,230,0),   rgba(255,255,224,0.2) , rgba(173,216,230,0)); */
   /*animation-name: spin;*/
   animation-duration: 7s;
   animation-iteration-count: infinite;
@@ -101,15 +101,54 @@ animation-timing-function: linear;
   0%   {transform: rotate(0deg);}
   100% {transform: rotate(360deg);}
 }
-tt{
-  width: 150px;
+ tt{
+  /* width: 150px;
   height: 150px;
-  background-image: -webkit-radial-gradient(white 0%,yellow 200% );
-  border-radius: 50%;
-  position:absolute;
-  top:calc(50% - 75px);
-  left:calc(50% - 75px);
+
+  border-radius: 50%;*/
+  /* background-image: -webkit-radial-gradient(white 0%,yellow 200% );
+      position: absolute;
+      transform: rotate(270deg);
+      height: 75px;
+      width: 150px;
+      border-radius: 150px 150px 0 0;
+      background-color: rgba(255,255,255);
+      top: calc(50% - 40px);
+      left: calc(50% - 110px); */
+  /* box-shadow: #FFFFFF -25px 0; */
+
 }
+.moon2{
+      background-image: -webkit-radial-gradient(white 0%,yellow 200% );
+      position: absolute;
+      width: 150px;
+      height: 150px;
+      top:calc(50% - 75px);
+      left:calc(50% - 75px);
+      border-radius: 50%;
+
+}
+.moonshadow{
+      background:darkblue;
+      position: absolute;
+      width: 150px;
+      height: 150px;
+      left:calc(50% - 35px);
+      top:calc(50% - 75px);
+      border-radius: 50%;
+
+}
+.moonshadow2{
+      background:darkblue;
+      position: absolute;
+      width: 150px;
+      height: 150px;
+      left:calc(50% - 115px);
+      top:calc(50% - 75px);
+      border-radius: 50%;
+
+}
+
 .starsky{
   position: absolute;
   width: 95%;
