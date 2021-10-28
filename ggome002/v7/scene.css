@@ -1,0 +1,40 @@
+main {
+  background: black;
+}
+
+section {
+  background-image: -webkit-linear-gradient(lightblue 10%, white 75%, green 95%);
+  background-image: -o-linear-gradient(lightblue 10%, white 75%, green 95%);
+  background-image: linear-gradient(lightblue 10%, white 75%, green 95%);
+  animation: sky 5s reverse infinite;
+  height: 700px;
+  width: 400px;
+}
+
+/* CLOUDY */
+.cloudy {
+	animation: cloudy 5s ease-in-out infinite;
+	background: attr(data-color);
+	border-radius: 50%;
+	box-shadow:
+		#EEEEEE 65px -15px 0 -5px,
+		#EEEEEE 25px -25px,
+		#EEEEEE 30px 10px,
+		#EEEEEE 60px 15px 0 -10px,
+		#EEEEEE 85px 5px 0 -5px;
+	height: 50px;
+	width: 50px;
+	margin-left: -60px;
+	position: absolute;
+
+}
+
+@keyframes sky {
+	0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: .4;
+  }
+}
