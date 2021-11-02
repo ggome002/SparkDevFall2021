@@ -9,19 +9,47 @@
   <body>
 
     <main>
-      <section>
-        <div class="sunny">
-</div>
+      <section id = "sky">
+        <div class="sunny"></div>
 
-<div id="clouds">
-	<div class="cloud x1"></div>
-	<!-- Time for multiple clouds to dance around -->
-	<div class="cloud x2"></div>
-	<div class="cloud x3"></div>
-	<div class="cloud x4"></div>
-	<div class="cloud x5"></div>
-</div>
+    <!-- <div id="clouds"> -->
+    	<div class=" cloud cloud1"></div>
+    	<div class="cloud cloud2"></div>
+    	<div class="cloud cloud3"></div>
+    	<div class="cloud cloud4"></div>
+    	<div class="cloud cloud5"></div>
+    	<div class="cloud cloud6"></div>
+    	<div class="cloud cloud7"></div>
+    	<div class="cloud cloud8"></div>
+    <!-- </div> -->
       </section>
     </main>
   </body>
+  <script type="text/javascript">
+      i = 1;
+      while (i < 8) {
+          var cloud = document.createElement("div")
+          // cloud.style.height = "200px";
+          // cloud.style.width = "200px";
+          cloud.style.background = "green";
+          cloud.style.top = "150px";
+          cloud.style.left = "150px";
+          cloud.style.position = "absolute";
+          cloud.style.background = "yellow"
+          cloud.className = "cloud cloud" + i;
+          var sky = document.getElementById("sky");
+          sky.append(cloud)
+          i++;
+      }
+
+      // var cloud = document.createElement("div")
+      // cloud.style.height = "200px";
+      // cloud.style.width = "200px";
+      // cloud.style.background = "green";
+      // cloud.style.top = "150px";
+      // cloud.style.left = "150px";
+      // cloud.style.position = "absolute";
+      // cloud.style.background = "yellow"
+      // cloud.className = "cloud cloud7"
+  </script>
 </html>
