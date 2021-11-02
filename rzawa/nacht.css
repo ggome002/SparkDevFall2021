@@ -10,7 +10,7 @@ div{
       position: fixed;
       top: 0;
       left:0;
-      background-image:-webkit-linear-gradient(darkblue 0%,darkblue 30%, black 80%, darkgreen 100%);
+      background-image:-webkit-linear-gradient(darkblue 0%,darkblue 30%, black 80%, #4d4d4d 100%);
 
 
 
@@ -173,31 +173,3 @@ marquee{
   position:absolute;
   top:calc(70% - 25px);
   left:calc(70% - 25px);}
-.star{
-  top:calc(60% - 25px);
-  left:calc(60% - 25px);
-}
-.star1{
-  top:calc(50% - 25px);
-  left:calc(50% - 25px);
-}
-.star2{
-  top:calc(40% - 25px);
-  left:calc(40% - 25px);
-}
-.star3{
-  top:calc(50% - 25px);
-  left:calc(42% - 25px);
-}
-.star4{
-  top:calc(60% - 25px);
-  left:calc(44% - 25px);
-}
-.star5{
-  top:calc(70% - 25px);
-  left:calc(46% - 25px);
-}
-.star6{
-  top:calc(40% - 25px);
-  left:calc(48% - 25px);
-}
