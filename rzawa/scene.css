@@ -155,3 +155,203 @@ top:calc(70% - 25px);
   left:calc(78% - 25px);
   top:calc(30% - 25px);
 }
+/* and (min-width: 600px) */
+@media  screen  and (max-height: 650px) {
+  tt {
+      width: 75px;
+      height: 75px;
+      background-image: -webkit-radial-gradient(yellow, orange );
+      border-radius: 50%;
+      position: absolute;
+      top: calc(50% - 38px);
+      left: calc(50% - 38px);
+  }
+
+
+div{
+
+}
+.cloud {
+    height: 180px;
+    width: 390px;
+    top: calc(10% - 50px);
+}
+.cloud2 {
+    height: 180px;
+    width: 390px;
+    top:calc(25% - 50px);
+}
+.cloud3 {
+    height: 180px;
+    width: 390px;
+      top:calc(18% - 50px);
+}
+.sun {
+  position: absolute;
+  width: 225px;
+  height: 225px;
+  border-radius: 50%;
+  /* background: blue; */
+  top: calc(0 - 150px);
+  left: calc(0 - 150px);
+  background-image: -webkit-linear-gradient(0deg,rgba(173,216,230,0),   rgba(255,165,0,0.2) , rgba(173,216,230,0));
+  animation-name: spin;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  z-index: -1;
+}
+marquee {
+    height: 38px;
+    width: 2px;
+    left: calc(30% - 25px);
+    top: calc(50% - 24px);
+}
+.up {
+    transform: rotate(0deg);
+    left: calc(50% - 0px);
+    top: calc(22% - 25px);
+}
+.down {
+    transform: rotate(0deg);
+    left: calc(50% - 0px);
+    top: calc(82% - 25px);
+}
+.rightln {
+    left: calc(92% - 25px);
+    top: calc(50% - 25px);
+}
+.nw {
+    transform: rotate(315deg);
+    left: calc(38% - 25px);
+    top: calc(30% - 25px);
+}
+.se {
+    transform: rotate(315deg);
+    left: calc(81% - 25px);
+    top: calc(75% - 25px);
+}
+.sw {
+    transform: rotate(225deg);
+    left: calc(37% - 25px);
+    top: calc(75% - 25px);
+}
+.ne {
+    transform: rotate(225deg);
+    left: calc(80% - 25px);
+    top: calc(30% - 25px);
+}
+command {
+    position: absolute;
+    top: 56%;
+    left: 31%;
+    transform: translate(-54%, -57%);
+    height: 91px;
+    width: 109px;
+    border-radius: 150px 150px 0px 0px;
+    background-color: rgb(255, 255, 255);
+}
+span {
+  width: 100px;
+  height: 100px;
+
+}
+
+
+}
+@media  screen  and (max-height: 350px) {
+  tt {
+      width: 50px;
+      height: 50px;
+      background-image: -webkit-radial-gradient(yellow, orange );
+      border-radius: 50%;
+      position: absolute;
+      top: calc(50% - 25px);
+      left: calc(50% - 25px);
+  }
+  div{
+
+  }
+  .cloud {
+    height: 103px;
+    width: 217px;
+    top: calc(10% - 25px);
+}
+.cloud2 {
+  height: 103px;
+  width: 217px;
+  top:calc(25% - 25px);
+}
+.cloud3 {
+  height: 103px;
+  width: 217px;
+  top:calc(18% - 25px);
+}
+  .sun {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    /* background: blue; */
+    top: calc(0 - 150px);
+    left: calc(0 - 150px);
+    background-image: -webkit-linear-gradient(0deg,rgba(173,216,230,0),   rgba(255,165,0,0.2) , rgba(173,216,230,0));
+    animation-name: spin;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    z-index: -1;
+}
+marquee{
+  height:25px;
+  width:2px;
+left: calc(36% - 25px);
+top: calc(50% - 12px);
+
+}
+.up{
+top:calc(28% - 25px);
+}
+.down{
+top: calc(88% - 25px);
+}
+.rightln {
+    left: calc(96% - 25px);
+    top: calc(50% - 12px);
+}
+.nw {
+    left: calc(44% - 25px);
+    top: calc(37% - 25px);
+}
+.se {
+    transform: rotate(315deg);
+    left: calc(88% - 25px);
+    top: calc(79% - 25px);
+}
+.sw {
+    transform: rotate(225deg);
+    left: calc(45% - 25px);
+    top: calc(80% - 25px);
+}
+.ne {
+    transform: rotate(225deg);
+    left: calc(88% - 25px);
+    top: calc(36% - 25px);
+}
+span {
+  width: 50px;
+  height: 50px;
+
+}
+command {
+    position: absolute;
+    top: 56%;
+    left: 31%;
+    transform: translate(-60%, -67%);
+    height: 50px;
+    width: 65px;
+    border-radius: 150px 150px 0px 0px;
+    background-color: rgb(255, 255, 255);
+}
+
+}
