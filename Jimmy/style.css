@@ -74,7 +74,7 @@ section {
 	border-radius: 200px;
 	-moz-border-radius: 200px;
 	-webkit-border-radius: 200px;
-  animation-name: lefttoright;
+  /* animation-name: lefttoright; */
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 	position: absolute;
@@ -99,7 +99,7 @@ section {
 	top: -55px; left: auto; right: 15px;
 }
 
-.cloud1 {
+/* .cloud1 {
   animation-duration: 13s;
   opacity: 1.2;
   top: 150px;
@@ -149,4 +149,4 @@ section {
   animation-name: righttoleft;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-}
+} */

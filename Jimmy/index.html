@@ -13,34 +13,75 @@
         <div class="sunny"></div>
 
     <!-- <div id="clouds"> -->
-    	<div class=" cloud cloud1"></div>
+    	<!-- <div class=" cloud cloud1"></div>
     	<div class="cloud cloud2"></div>
     	<div class="cloud cloud3"></div>
     	<div class="cloud cloud4"></div>
     	<div class="cloud cloud5"></div>
     	<div class="cloud cloud6"></div>
     	<div class="cloud cloud7"></div>
-    	<div class="cloud cloud8"></div>
+    	<div class="cloud cloud8"></div> -->
     <!-- </div> -->
       </section>
     </main>
   </body>
   <script type="text/javascript">
       i = 1;
-      while (i < 8) {
-          var cloud = document.createElement("div")
-          // cloud.style.height = "200px";
-          // cloud.style.width = "200px";
-          cloud.style.background = "green";
-          cloud.style.top = "150px";
-          cloud.style.left = "150px";
-          cloud.style.position = "absolute";
-          cloud.style.background = "yellow"
-          cloud.className = "cloud cloud" + i;
-          var sky = document.getElementById("sky");
-          sky.append(cloud)
-          i++;
+
+      function getRandomInt(max) {
+        return Math.floor(Math.random() * max);
       }
+
+      function createCloud() {
+        var seconds = getRandomInt(10)+1;
+
+        var cloud = document.createElement("div")
+        cloud.style.top = (getRandomInt(100)+50)+"px";
+        // cloud.style.left = "150px";
+        cloud.style.position = "absolute";
+        cloud.style.background = "pink";
+        cloud.className = "cloud";
+        cloud.style.animationDuration = seconds+"s";
+        var sky = document.getElementById("sky");
+        cloud.style.animationName = (seconds > 7 ? "lefttoright" : "righttoleft" );
+        sky.append(cloud);
+        console.log("seconds  = "+seconds + " animation name "+ (seconds > 7 ? "lefttoright" : "righttoleft" ))
+        setTimeout(createCloud, 3000);
+        setTimeout((elm)=>{elm.remove()},  (seconds)*1000,cloud);
+        //setTimeout(()=> {console.log("remove me")}, seconds*1000);
+      }
+
+      createCloud();
+      // while (i < 8) {
+      //     if (Math.floor(Math.random() * 10)<5) {
+      //       createCloud("black");
+      //     }else{
+      //       createCloud("green");
+      //     }
+      //     i++;
+      // }
+
+      //use for later
+
+
+      // while (i < 8) {
+      //     var cloud = document.createElement("div")
+      //     // cloud.style.height = "200px";
+      //     // cloud.style.width = "200px";
+      //     // cloud.style.background = "green";
+      //     cloud.style.top = "150px";
+      //     cloud.style.left = "150px";
+      //     cloud.style.position = "absolute";
+      //     cloud.style.background = "black"
+      //     cloud.className = "cloud cloud" + i;
+      //     var sky = document.getElementById("sky");
+      //     sky.append(cloud)
+      //     i++;
+      // }
+
+
+
+
 
       // var cloud = document.createElement("div")
       // cloud.style.height = "200px";
