@@ -176,3 +176,26 @@ marquee{
   position:absolute;
   top:calc(70% - 25px);
   left:calc(70% - 25px);}
+@media  screen  and (max-height: 650px){
+  tt {
+      height: 50px;
+      width: 100px;
+
+  }
+  .halfmoon2{
+  top:calc(25% - 0px)
+
+  }
+}
+@media  screen  and (max-height: 350px){
+  tt {
+      height: 25px;
+      width: 50px;
+
+  }
+  .halfmoon2{
+  top:calc(20% - 0px)
+
+  }
+
+}
