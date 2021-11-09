@@ -32,22 +32,30 @@
         return Math.floor(Math.random() * max);
       }
 
+      function randomOpacity(){
+        var opac = 0;
+        opac = Math.random()+0.2;
+        return opac;
+      }
+
       function createCloud() {
-        var seconds = getRandomInt(10)+1;
+        var seconds = getRandomInt(13)+7;
 
         var cloud = document.createElement("div")
         cloud.style.top = (getRandomInt(100)+50)+"px";
         // cloud.style.left = "150px";
         cloud.style.position = "absolute";
-        cloud.style.background = "pink";
+        cloud.style.background = "white";
         cloud.className = "cloud";
         cloud.style.animationDuration = seconds+"s";
         var sky = document.getElementById("sky");
         cloud.style.animationName = (seconds > 7 ? "lefttoright" : "righttoleft" );
         sky.append(cloud);
-        console.log("seconds  = "+seconds + " animation name "+ (seconds > 7 ? "lefttoright" : "righttoleft" ))
-        setTimeout(createCloud, 3000);
+        console.log("seconds  = "+seconds + " animation name "+ (seconds > 12 ? "lefttoright" : "righttoleft" ));
+        setTimeout(createCloud, 3500);
         setTimeout((elm)=>{elm.remove()},  (seconds)*1000,cloud);
+        cloud.style.opacity = randomOpacity();
+
         //setTimeout(()=> {console.log("remove me")}, seconds*1000);
       }
 
