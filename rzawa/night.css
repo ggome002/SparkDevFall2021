@@ -15,21 +15,7 @@ div{
 
 
 }
-.cloud{
-position: absolute;
-top:calc(10% - 75px);
-left:calc(50% - 75px);
-animation-name: lefttoright;
-animation-duration: 21s;
-animation-iteration-count: infinite;
-height:300px;
-width:500px;
-animation-timing-function: linear;
-}
-@keyframes lefttoright {
-  0%   {left:-30%}
-  100% {left:100%}
-}
+
 span {
   width: 150px;
   height: 150px;
@@ -61,28 +47,7 @@ command{
     background-color: rgba(255,255,255);
   #  border: 1px solid black;
 }
-.cloud2{
-position: absolute;
-top:calc(25% - 75px);
-left:calc(50% - 75px);
-animation-name: lefttoright;
-animation-duration: 15s;
-animation-iteration-count: infinite;
-height:300px;
-width:500px;
-animation-timing-function: linear;
-}
-.cloud3{
-position: absolute;
-top:calc(18% - 75px);
-left:calc(50% - 75px);
-animation-name: lefttoright;
-animation-duration: 11s;
-animation-iteration-count: infinite;
-height:300px;
-width:500px;
-animation-timing-function: linear;
-}
+
 .moon{
   position: absolute;
   width: 300px;
@@ -110,7 +75,7 @@ tt{
   top:calc(50% - 75px);
   left:calc(50% - 75px);
 }
-.starsky{
+#starsky{
   position: absolute;
   width: 95%;
   height: 38%;
@@ -133,8 +98,16 @@ marquee{
   border-radius: 50%;
   position:absolute;
   top:calc(70% - 25px);
-  left:calc(70% - 25px);}
-
+  left:calc(70% - 25px);
+  animation-name: inandout;
+  animation-iteration-count: infinite;
+}
+  @keyframes inandout {
+    0%   {opacity: 0;}
+    50%   {opacity: 1;}
+    100% {opacity: 0;
+    }
+  }
 @media  screen  and (max-height: 650px) {
   tt {
       width: 75px;
